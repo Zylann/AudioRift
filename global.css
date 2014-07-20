@@ -1,0 +1,23 @@
+body {
+	background: #000;
+}
+#rift-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#rift-canvas {
+	width: 100%;
+	height: 90%;
+}
+#rift-container audio {
+	width: 80%;
+}
+#rift-container a {
+	color: #888;
+}
+#rift-container a:hover {
+	color: #aaa;
+}
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>AudioRift</title>
+
+		<link href="global.css" type="text/css" rel="stylesheet"/>
+
+		<link rel="shortcut icon" href="audiorift_icon.png"/>
+
+		<script src="audiorift/utility.js"></script>
+		<script src="audiorift/math.js"></script>
+		<script src="audiorift/main.js"></script>
+	</head>
+
+	<body>
+
+		<div id="rift-container">
+			<canvas id="rift-canvas" width="800" height="600"></canvas>
+			<audio id="rift-audio" controls></audio>
+		</div>
+
+		<script>
+			var rift = null;
+			window.onload = function() {
+				var q = window.location.search.substring(1);
+				rift = new AudioRift("rift-canvas", "rift-audio");
+				rift.setMediaURL(q);
+				rift.start();
+			}
+		</script>
+	</body>
+</html>
+
